@@ -1,0 +1,168 @@
+$text-color: #464646;
+$accent-color: #DD8E56;
+$bg-color: rgba(#EAE3D1, 35%);
+
+body {
+    color: $text-color;
+    font-family: open-sans, sans-serif;
+}
+
+.btn {
+    padding: 12px 18px;                  //下padding親ブロックからはみ出る？
+    background-color: $accent-color;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section__title {
+    &--en {
+        font-size: 32px;
+        letter-spacing: .3em;
+        font-weight: 600;
+        font-style: normal;
+    }
+    &--ja {                         //若干ずれてる？
+        letter-spacing: .3em;
+        margin-top: 8px;
+    }
+}
+
+/**********************/
+/*       header       */
+/**********************/
+.header {
+    height: 88px;
+    border-bottom: 1px solid $text-color;
+}
+
+.header__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav__list {
+    font-size: 14px;
+    display: flex;
+    li + li {
+        margin-left: 32px;
+    }
+}
+
+
+/**********************/
+/*     main visual     */
+/**********************/
+.mainvisual {
+    width: 100%;
+    height: calc(100vh - 88px);
+    background-image: url(../img/mainvisual.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.site__title {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    transform: translateY(-50%);
+    &--main {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: .3em;
+        font-weight: 600;
+        font-style: normal;
+        color: $accent-color;
+        margin-bottom: 36px;
+    }
+    &--sub {
+        color: $text-color;
+        letter-spacing: .2em;
+        line-height: 2em;
+    }
+}
+
+
+
+/**********************/
+/*       about        */
+/**********************/
+.about {
+    text-align: center;
+    padding: 64px 0; 
+}
+
+.about__text {
+    margin: 64px 0;
+    letter-spacing: .3em;
+    line-height: 4em;               //figmaでは32pxやのになんで？
+}
+
+
+/**********************/
+/*      service       */
+/**********************/
+.service {
+    background: $bg-color;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;          //ブロック要素には余白を指定しない?
+}
+
+.service__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    &--direction,
+    &--design,
+    &--coding {
+        width: calc((100% - 100px) / 3);
+    }
+}
+
+.service__title {
+    margin-top: 48px;
+    &--ja {
+        color: $accent-color;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: .2em;
+    }
+    &--en {
+        margin-top: 16px;
+        line-height: 1;
+        letter-spacing: .2em;
+    }
+}
+
+.service__text {
+    margin-top: 48px;
+    line-height: 2em;
+    letter-spacing: .2em;
+}
+
+
+/**********************/
+/*       works        */
+/**********************/
+.works {
+    text-align: center;
+    padding: 64px 0;
+}
+
+.works__text {
+     margin-top: 64px;
+     letter-spacing: .2em;
+}
