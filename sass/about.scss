@@ -1,0 +1,26 @@
+@use 'header';
+@use 'footer';
+@use 'common';
+@use 'variables' as v;
+
+.about-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 64px;
+}
+
+.about-items__icon {
+    max-width: 320px;
+}
+
+.about-items__text {
+    background-color: v.$bg-color;
+    padding: 64px 40px;
+}
+
+.about-items__text--intro {
+    margin-bottom: 64px;
+    line-height: 40px;
+    letter-spacing: .3em;
+}

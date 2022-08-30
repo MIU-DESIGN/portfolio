@@ -1,0 +1,52 @@
+@use 'variables' as v;
+
+body {
+    color: v.$text-color;
+    font-family: open-sans, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    padding: 12px 18px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: .2em;
+    display: inline-block;
+    background-color: v.$accent-color;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section__title {
+    &--en {
+        font-size: 32px;
+        letter-spacing: .3em;
+        font-weight: 600;
+        font-style: normal;
+    }
+    &--ja {                         //若干ずれてる？
+        letter-spacing: .3em;
+        margin-top: 8px;
+    }
+}
+
+.page__title {
+    text-align: left;
+    margin-top: 64px;
+    &--en {
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: .3em;
+    }
+    &--ja {
+        letter-spacing: .3em;
+    }
+}

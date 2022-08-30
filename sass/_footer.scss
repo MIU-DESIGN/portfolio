@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+/**********************/
+/*      footer        */
+/**********************/
+.footer {
+    background-color: v.$bg-color;
+    text-align: center;
+    padding: 12px 0;
+    border-top: .5px solid v.$line-color;
+}
+
+.footer__copywrite {
+    color: v.$line-color;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .2em;
+}

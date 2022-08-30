@@ -1,0 +1,26 @@
+@use 'variables' as v;
+
+/**********************/
+/*       header       */
+/**********************/
+.header {
+    height: 88px;
+    border-bottom: 1px solid v.$line-color;
+}
+
+.header__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav__list {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    li + li {
+        margin-left: 32px;
+    }
+}
