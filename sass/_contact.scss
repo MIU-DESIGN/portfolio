@@ -1,0 +1,14 @@
+@use 'variables' as v;
+
+/**********************/
+/*      contact       */
+/**********************/
+.contact {
+    background-color: v.$bg-color;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.contact__text {
+    margin: 64px 0;
+}

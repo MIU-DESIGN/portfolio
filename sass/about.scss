@@ -3,6 +3,10 @@
 @use 'common';
 @use 'variables' as v;
 
+
+/**********************/
+/*        about       */
+/**********************/
 .about-items {
     display: flex;
     justify-content: space-between;

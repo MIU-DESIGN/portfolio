@@ -1,12 +1,13 @@
 @use 'header';
 @use 'footer';
 @use 'common';
+@use 'contact';
 @use 'variables' as v;
 
 /**********************/
 /*     main visual    */
 /**********************/
-.main-visual {
+.mainvisual {
     width: 100%;
     // height: calc(100vh - 88px);
     background-image: url(../img/mainvisual.jpg);
@@ -123,18 +124,4 @@
 
 .works-contents__figure {
     width: 30%;
-}
-
-
-/**********************/
-/*      contact       */
-/**********************/
-.contact {
-    background-color: v.$bg-color;
-    text-align: center;
-    padding: 64px 0;
-}
-
-.contact__text {
-    margin: 64px 0;
 }

@@ -1,0 +1,39 @@
+@use 'header';
+@use 'footer';
+@use 'common';
+@use 'variables' as v;
+@use 'contact';
+
+/**********************/
+/*       service      */
+/**********************/
+
+.service-wrap {
+    display: grid;
+    gap: 40px;
+    padding: 64px 0;
+}
+.service-card {
+    background-color: v.$bg-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 40px;
+}
+
+.service-card__text {
+    margin-left: 48px;
+}
+
+.service-card__text--heading {
+    font-size: 32px;
+    color: v.$accent-color;
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+
+.service-card__text--detail {
+    margin-top: 16px;
+    line-height: 2;
+    letter-spacing: .2em;
+}
+
