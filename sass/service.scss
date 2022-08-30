@@ -37,3 +37,16 @@
     letter-spacing: .2em;
 }
 
+.skill {
+    margin-top: 32px;
+    color: v.$accent-color;
+    letter-spacing: .2em;
+    font-weight: 600;
+}
+
+.skill__icons {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    gap: 16px;
+}
