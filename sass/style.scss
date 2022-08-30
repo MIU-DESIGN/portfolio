@@ -1,14 +1,20 @@
 $text-color: #464646;
 $accent-color: #DD8E56;
 $bg-color: rgba(#EAE3D1, 35%);
+$line-color: #808080;
 
 body {
     color: $text-color;
     font-family: open-sans, sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 .btn {
     padding: 12px 18px;                  //下padding親ブロックからはみ出る？
+    display: inline-block;
     background-color: $accent-color;
     color: #fff;
     line-height: 1;
@@ -38,7 +44,7 @@ body {
 /**********************/
 .header {
     height: 88px;
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $line-color;
 }
 
 .header__container {
@@ -51,6 +57,7 @@ body {
 .header-nav__list {
     font-size: 14px;
     display: flex;
+    align-items: center;
     li + li {
         margin-left: 32px;
     }
@@ -71,7 +78,7 @@ body {
 
 .site__title {
     position: absolute;
-    top: 75%;
+    top: 72%;
     left: 40%;
     transform: translateY(-50%);
     &--main {
@@ -165,4 +172,48 @@ body {
 .works__text {
      margin-top: 64px;
      letter-spacing: .2em;
+}
+
+.works-contents {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.works-contents__figure {
+    width: 30%;
+}
+
+
+/**********************/
+/*      contact       */
+/**********************/
+.contact {
+    background-color: $bg-color;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.contact__text {
+    margin: 64px 0;
+}
+
+
+/**********************/
+/*      footer        */
+/**********************/
+.footer {
+    background-color: $bg-color;
+    text-align: center;
+    padding: 12px 0;
+    border-top: .5px solid $line-color;
+}
+
+.footer__copywrite {
+    color: $line-color;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: .2em;
+ 
 }
