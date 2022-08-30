@@ -1,0 +1,36 @@
+@use 'header';
+@use 'footer';
+@use 'common';
+@use 'contact';
+@use 'variables' as v;
+
+.works__message {
+    letter-spacing: .2em;
+    margin-top: 64px;
+}
+
+.works-wrap {
+    padding: 64px 0;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 64px;
+    a {
+        cursor: pointer;
+    }
+}
+
+.works__card {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.works__card--pic {
+    outline: 1px solid v.$line-color;
+}
+
+.works__card--text {
+    letter-spacing: .2em;
+    margin-top: 24px;
+}
