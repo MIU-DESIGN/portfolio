@@ -34,3 +34,19 @@
     letter-spacing: .2em;
     margin-top: 24px;
 }
+
+.pagination {
+    text-align: center;
+    margin-bottom: 64px;
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    li + li {
+        margin-left: 48px;
+    }
+}
+
+.current {
+    border-bottom: 1px solid v.$text-color;
+}
