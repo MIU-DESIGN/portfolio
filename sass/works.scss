@@ -11,11 +11,15 @@
 
 .works-wrap {
     padding: 64px 0;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 64px;
+    flex-direction: column;
+    justify-content: space-between;
+    // grid-template-rows: repeat(3, 1fr);
+    // gap: 64px;
     a {
         cursor: pointer;
+    }
+    a + a {
+        margin-top: 64px;
     }
 }
 
@@ -44,6 +48,9 @@
     }
     li + li {
         margin-left: 48px;
+    }
+    a:hover {
+        color: v.$accent-color;
     }
 }
 
