@@ -60,10 +60,30 @@
 
 
 
-
 /*              works details               */
+
 .work__breadcrumbs {
     letter-spacing: .2em;
     margin-top: 64px;
     margin-bottom: 64px;
 }
+
+.pickup-slider {
+    visibility: hidden;
+}
+.pickup-slider.slick-initialized {
+    visibility: visible;
+}
+
+.pickup-slider__item {
+    margin: 0 32px;
+    aspect-ratio: 3 / 2;
+    max-width: 600px;
+    max-height: 400px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
