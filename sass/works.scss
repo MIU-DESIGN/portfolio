@@ -39,7 +39,7 @@
     margin-top: 24px;
 }
 
-.pagination {
+.work-list__pagination {
     text-align: center;
     margin-bottom: 64px;
     ul {
@@ -70,17 +70,15 @@
 
 .pickup-slider {
     visibility: hidden;
-    outline: 2px solid red;
+    margin-bottom: 24px;
 }
 .pickup-slider.slick-initialized {
     visibility: visible;
 }
 
 .pickup-slider__item {
-    outline: 2px solid blue;
     margin: 0 32px;
     aspect-ratio: 3 / 2;
-    max-width: 600px;
     max-height: 400px;
     img {
       width: 100%;
@@ -89,3 +87,38 @@
     }
 }
 
+.inner-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.work-site__link{
+    font-size: .8em;
+    &:hover{
+        color: v.$accent-color;
+    }
+}
+.site-summery {
+    padding: 32px 0;
+
+    dt {
+        margin-bottom: 8px;
+    }
+
+    dd {
+        margin-bottom: 16px;
+        margin-left: 2em;
+    }
+}
+
+.work-details__pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-details__pagination .material-icons {
+    display: inline-flex;
+    vertical-align: middle;
+}
