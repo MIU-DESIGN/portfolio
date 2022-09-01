@@ -116,6 +116,10 @@
 .work-details__pagination {
     display: flex;
     justify-content: space-between;
+    a {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .work-details__pagination .material-icons {
