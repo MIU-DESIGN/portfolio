@@ -18,6 +18,9 @@ img {
     background-color: v.$accent-color;
     color: #fff;
     cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
 }
 
 .wrapper {
