@@ -70,12 +70,14 @@
 
 .pickup-slider {
     visibility: hidden;
+    outline: 2px solid red;
 }
 .pickup-slider.slick-initialized {
     visibility: visible;
 }
 
 .pickup-slider__item {
+    outline: 2px solid blue;
     margin: 0 32px;
     aspect-ratio: 3 / 2;
     max-width: 600px;

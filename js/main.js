@@ -8,7 +8,7 @@
         speed: 5000, // スライドが流れる速度を設定
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '64px',
+        centerPadding: '15%',
         // responsive: [
         //   {
         //     breakpoint: 600,
