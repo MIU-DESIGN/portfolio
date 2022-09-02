@@ -4,7 +4,7 @@
     <section class="mainvisual">
         <div class="mainvisual__wrapper">
             <div class="site__title">
-                <h2 class="site__title--main">YUUMI's PORTFOLIO</h2>
+                <h2 class="site__title--main"><?php bloginfo('name');?></h2>
                 <p class="site__title--sub">Webデザイナー兼WebコーダーYUUMIの<br>
                     ポートフォリオサイト</p>
                 </div>
@@ -19,7 +19,7 @@
         『人と人をつなぐきっかけをつくる』<br>
         というWeb制作の魅力に引き込まれた<br>
         人を喜ばせることが大好きなポジティブ人間です。</p>
-        <a class="btn" href="about.html">View More</a>
+        <a class="btn" href="<?php echo esc_url(home_url('about'));?>">View More</a>
     </section>
     <section class="service-section">
         <div class="section__title">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <a class="btn" href="contact.html">View More</a>
+        <a class="btn" href="<?php echo esc_url(home_url('service'));?>">View More</a>
     </section>
     <section class="works-section">
         <div class="section__title">
@@ -79,7 +79,7 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('img/TravelBlog-1.png'));?>" alt="ブログサイト">
             </div>
         </div>
-        <a class="btn" href="works.html">View More</a>
+        <a class="btn" href="<?php echo esc_url(home_url('work'));?>">View More</a>
     </section>
     <section class="contact-section">
         <div class="section_title">
@@ -87,7 +87,7 @@
             <p class="section__title--ja">お問い合わせ</p>
         </div>
         <p class="contact-section__text">お仕事のご依頼やご相談等、お気軽にお問い合わせください。</p>
-        <a class="btn" href="contact-form.html">お問い合わせ</a>
+        <a class="btn" href="<?php echo esc_url(home_url('contact'));?>">お問い合わせ</a>
     </section>
 </main>
 
