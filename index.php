@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/emn5fxc.css">
-    <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>YUUMI's PORTFOLIO</title>
-</head>
-<body>
-<header class="header">
-    <div class="header__container wrapper">
-        <h1 class="header__logo"><a href="#"><img src="img/logo.png" alt="ヘッダーアイコン"></a></h1>
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li><a href="index.html">TOP</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="service.html">SERVICE</a></li>
-                <li><a href="works.html">WORKS</a></li>
-                <li><a class="btn" href="contact-form.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<?php get_header();?>
+
 <main>
     <section class="mainvisual">
         <div class="mainvisual__wrapper">
@@ -53,7 +29,7 @@
         <div class="wrapper">
             <div class="service__cards">
                 <div class="service__cards--direction">
-                    <img src="img/direction-icon.png" alt="ディレクション">
+                    <img src="<?php echo esc_url(get_theme_file_uri('img/direction-icon.png'));?>" alt="ディレクション">
                     <div class="service__title">
                         <h3 class="service__title--ja">ディレクション</h3>
                         <p class="service__title--en">Direction</p>
@@ -63,7 +39,7 @@
                     </p>
                 </div>
                 <div class="service__cards--design">
-                    <img src="img/design-icon.png" alt="デザイン">
+                    <img src="<?php echo esc_url(get_theme_file_uri('img/design-icon.png'));?>" alt="デザイン">
                     <div class="service__title">
                         <h3 class="service__title--ja">デザイン</h3>
                         <p class="service__title--en">Design</p>
@@ -73,7 +49,7 @@
                     </p>
                 </div>
                 <div class="service__cards--coding">
-                    <img src="img/coding-icon.png" alt="コーディング">
+                    <img src="<?php echo esc_url(get_theme_file_uri('img/coding-icon.png'));?>" alt="コーディング">
                     <div class="service__title">
                         <h3 class="service__title--ja">コーディング</h3>
                         <p class="service__title--en">Coding</p>
@@ -94,13 +70,13 @@
         <p class="works-section__text">過去の制作実績です。公開可能なもののみ掲載しております。</p>
         <div class="works-contents wrapper">
             <div class="works-contents__figure">
-                <img src="img/furniture-1.png" alt="インテリアサイト">
+                <img src="<?php echo esc_url(get_theme_file_uri('img/furniture-1.png'));?>" alt="インテリアサイト">
             </div>
             <div class="works-contents__figure">
-                <img src="img/Sneaker-1.png" alt="メディアサイト">
+                <img src="<?php echo esc_url(get_theme_file_uri('img/Sneaker-1.png'));?>" alt="メディアサイト">
             </div>
             <div class="works-contents__figure">
-                <img src="img/TravelBlog-1.png" alt="ブログサイト">
+                <img src="<?php echo esc_url(get_theme_file_uri('img/TravelBlog-1.png'));?>" alt="ブログサイト">
             </div>
         </div>
         <a class="btn" href="works.html">View More</a>
@@ -114,8 +90,5 @@
         <a class="btn" href="contact-form.html">お問い合わせ</a>
     </section>
 </main>
-<footer class="footer">
-    <p class="footer__copywrite">&copy;2022 YUUMI's Design</p>
-</footer>
-</body>
-</html>
+
+<?php get_footer();?>
