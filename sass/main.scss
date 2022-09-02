@@ -6,7 +6,6 @@
 @use 'about';
 @use 'service';
 @use 'works';
-@use 'contact-form';
 @use 'contact';
 
 /**********************/
@@ -116,12 +115,12 @@
 /**********************/
 /*       works        */
 /**********************/
-.works {
+.works-section {
     text-align: center;
     padding: 64px 0;
 }
 
-.works__text {
+.works-section__text {
      margin-top: 64px;
      letter-spacing: .2em;
 }
@@ -135,4 +134,17 @@
 
 .works-contents__figure {
     width: 30%;
+}
+
+/**********************/
+/*      contact       */
+/**********************/
+.contact-section {
+    background-color: v.$bg-color;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.contact-section__text {
+    margin: 64px 0;
 }
