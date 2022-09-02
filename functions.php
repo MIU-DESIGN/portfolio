@@ -24,3 +24,10 @@ function st_enqueue_scripts() {
   wp_enqueue_script('main', get_theme_file_uri('js/main.js'), array('jquery'), false, true);
 }
 add_action('wp_enqueue_scripts', 'st_enqueue_scripts');
+
+
+function replaceImagePath($arg) {
+	$content = str_replace('"img/', '"' . get_bloginfo('template_directory') . '/img/', $arg);
+	return $content;
+}  
+add_action('the_content', 'replaceImagePath');
