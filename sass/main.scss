@@ -1,8 +1,13 @@
+@use 'variables' as v;
 @use 'common';
 @use 'header';
 @use 'footer';
+
+@use 'about';
+@use 'service';
+@use 'works';
+@use 'contact-form';
 @use 'contact';
-@use 'variables' as v;
 
 /**********************/
 /*     main visual    */
@@ -49,12 +54,12 @@
 /**********************/
 /*       about        */
 /**********************/
-.about {
+.about-section {
     text-align: center;
     padding: 64px 0; 
 }
 
-.about__text {
+.about-section__text {
     margin: 64px 0;
     letter-spacing: .3em;
     line-height: 4em;               //figmaでは32pxやのになんで？
@@ -64,7 +69,7 @@
 /**********************/
 /*      service       */
 /**********************/
-.service {
+.service-section {
     background: v.$bg-color;
     text-align: center;
     padding-top: 64px;
