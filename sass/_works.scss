@@ -11,12 +11,12 @@
     justify-content: space-between;
     // grid-template-rows: repeat(3, 1fr);
     // gap: 64px;
-    a {
-        cursor: pointer;
-    }
-    a + a {
-        margin-top: 64px;
-    }
+    // a {
+    //     cursor: pointer;
+    // }
+    // a + a {
+    //     margin-top: 64px;
+    // }
 }
 
 .works__card {
@@ -24,6 +24,12 @@
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 24px;
+    a {
+        cursor: pointer;
+    }
+    &:not(:nth-child(1)){
+        margin-top: 64px;
+    }
 }
 
 .works__card--pic {
@@ -107,18 +113,4 @@
         margin-bottom: 16px;
         margin-left: 2em;
     }
-}
-
-.work-details__pagination {
-    display: flex;
-    justify-content: space-between;
-    a {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.work-details__pagination .material-icons {
-    display: inline-flex;
-    vertical-align: middle;
 }
