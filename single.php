@@ -36,8 +36,12 @@
                 <?php endwhile; ?>
             <?php endif; ?>
             <div class="single-page__navigation">
-                <?php previous_post_link('%link', '<<前のページへ', false ); ?>
-                <?php next_post_link('%link', '次のページへ>>', false ); ?>
+                <div class="prev">
+                    <?php previous_post_link('%link', '<<前のページへ', false ); ?>
+                </div>
+                <div class="next">
+                    <?php next_post_link('%link', '次のページへ>>', false ); ?>
+                </div>
             </div>
         </div>
     </section>
