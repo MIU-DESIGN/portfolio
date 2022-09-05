@@ -114,3 +114,12 @@
         margin-left: 2em;
     }
 }
+
+.single-page__navigation {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+    letter-spacing: .2em;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}

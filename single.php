@@ -16,8 +16,6 @@
                         <div class="pickup-slider__item"><img src="<?php the_post_thumbnail_url('full');?>" alt=""></div>
                         <div class="pickup-slider__item"><img src="<?php the_post_thumbnail_url('full');?>" alt=""></div>
                         <div class="pickup-slider__item"><img src="<?php the_post_thumbnail_url('full');?>" alt=""></div>
-                        <!-- <div class="pickup-slider__item"><img src="img/furniture-1.png" alt=""></div>
-                        <div class="pickup-slider__item"><img src="img/furniture-1.png" alt=""></div> -->
                     </div>
                     <div class="inner-wrapper">
                         <a class="work-site__link" href="<?php echo esc_html(get_post_meta(get_the_ID(), 'link', true)); ?>">
@@ -37,6 +35,10 @@
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
+            <div class="single-page__navigation">
+                <?php previous_post_link('%link', '<<前のページへ', false ); ?>
+                <?php next_post_link('%link', '次のページへ>>', false ); ?>
+            </div>
         </div>
     </section>
     <section class="contact-section">
