@@ -92,3 +92,18 @@ function pagination($pages = '', $range = 2) {
 サムネイルの使用
 **************************************************/
 add_theme_support('post-thumbnails');
+
+
+/**************************************************
+記事の並び順指定
+**************************************************/
+function sortpost($query) {
+  if(is_admin() || !$query->is_main_query()){
+      return;
+  }
+  //ASC:昇順、DESC:降順
+  $query->set('order', 'ASC');
+  //orderbyで何順に並べ替えるか指定
+  $query->set('orderby', 'date');
+}
+add_action('pre_get_posts', 'sortpost');
