@@ -12,6 +12,9 @@ add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 function add_files() {
     wp_enqueue_style('destyle', get_template_directory_uri().'/css/destyle.css');
     wp_enqueue_style('mainCss', get_template_directory_uri().'/css/main.css');
+    wp_enqueue_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+    wp_enqueue_style('slick-theme-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
+
 }
 add_action( 'wp_enqueue_scripts', 'add_files' );
 
