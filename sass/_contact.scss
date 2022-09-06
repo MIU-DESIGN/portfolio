@@ -22,7 +22,7 @@
     padding: 10px 115px;
     display: flex;
     flex-wrap: wrap;
-    line-height: 40px;
+    line-height: 1.5em;
 
     dt {
         width: 25%;
@@ -39,6 +39,7 @@
         width: calc(75% - 16px);
         border: 1px solid v.$line-color;
         margin-bottom: 24px;
+        padding: 4px 16px;
         textarea {
             width: 100%;
         }
