@@ -24,11 +24,18 @@
     margin: 0 auto;
     padding-top: 24px;
     padding-bottom: 24px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .6s, transform .6s;
     a {
         cursor: pointer;
     }
     &:not(:nth-child(1)){
         margin-top: 64px;
+    }
+    &.appear {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
