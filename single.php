@@ -14,23 +14,23 @@
                     </p>
                     <div class="pickup-slider">
                         <div class="pickup-slider__item"><img src="<?php the_post_thumbnail_url('full');?>" alt=""></div>
-                        <div class="pickup-slider__item"><img src="<?php the_post_thumbnail_url('full');?>" alt=""></div>
-                        <div class="pickup-slider__item"><img src="<?php the_post_thumbnail_url('full');?>" alt=""></div>
+                        <div class="pickup-slider__item"><img src="<?php echo CFS() -> get('slider-img1');?>" alt=""></div>
+                        <div class="pickup-slider__item"><img src="<?php echo CFS() -> get('slider-img2');?>" alt=""></div>
                     </div>
                     <div class="inner-wrapper">
-                        <a class="work-site__link" href="<?php echo esc_html(get_post_meta(get_the_ID(), 'link', true)); ?>">
-                            <?php echo esc_html(get_post_meta(get_the_ID(), 'link', true)); ?>
+                        <a class="work-site__link" href="<?php echo CFS() -> get('site-link');?>">
+                        <?php echo CFS() -> get('site-link');?>
                         </a>
 
                         <dl class="site-summery">
                             <dt>サイト概要</dt>
-                            <dd><?php echo esc_html(get_post_meta(get_the_ID(), 'サイト概要', true)); ?></dd>
+                            <dd><?php echo CFS() -> get('summery');?></dd>
                             <dt>制作期間</dt>
-                            <dd><?php echo esc_html(get_post_meta(get_the_ID(), '制作期間', true)); ?></dd>
+                            <dd><?php echo CFS() -> get('creation-time');?></dd>
                             <dt>使用したスキル</dt>
-                            <dd><?php echo esc_html(get_post_meta(get_the_ID(), '使用したスキル', true)); ?></dd>
+                            <dd><?php echo CFS() -> get('skill');?></dd>
                             <dt>制作カテゴリー</dt>
-                            <dd><?php echo esc_html(get_post_meta(get_the_ID(), '制作カテゴリー', true)); ?></dd>
+                            <dd><?php echo CFS() -> get('creation-category');?></dd>
                         </dl>
                     </div>
                 <?php endwhile; ?>
