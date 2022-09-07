@@ -65,7 +65,8 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+    </section>
 
     <section class="contact-section">
         <div class="section__title">
