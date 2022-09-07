@@ -12,19 +12,14 @@
             </div>
         </div>
         <p class="contact__message">まずはお気軽にお問い合わせください。</p>
-        <form action="#" method="post">
-            <dl class="contact-form">
-                <dt>お名前<span>*</span></dt>
-                <dd><input type="text" name="yourname"></dd>
-                <dt>メールアドレス<span>*</span></dt>
-                <dd><input type="text" name="email"></dd>
-                <dt>お問い合わせ内容<span>*</span></dt>
-                <dd><textarea name="message" rows="4"></textarea></dd>
-            </dl>
+
+        <form class="contact-form" action="#" method="post">
+            <?php if(have_posts()): ?>
+                <?php while(have_posts()): the_post(); ?>
+                    <?php the_content(); ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </form>
-        <div class="btn-wrap">
-            <input class="btn" type="submit" name="button1" value="送信">
-        </div>
     </div>
 </main>
 <?php get_footer();?>
