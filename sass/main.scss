@@ -35,18 +35,20 @@
     text-align: right;
 
     &--main {
-        font-size: 48px;
+        font-size: 36px;
         line-height: 1;
-        letter-spacing: .3em;
-        font-weight: 600;
+        letter-spacing: .6em;
+        font-weight: 450;
         font-style: normal;
         color: v.$accent-color;
         margin-bottom: 36px;
     }
     &--sub {
         color: v.$text-color;
+        font-size: 14px;
         letter-spacing: .2em;
         line-height: 2em;
+        padding-right: 16px;
     }
 }
 

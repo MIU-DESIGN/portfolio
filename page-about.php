@@ -8,11 +8,11 @@
         </div>
         <div class="about-items">
             <div class="about-items__icon">
-                <img src="<?php echo esc_url(get_theme_file_uri('img/about-icon.png'));?>" alt="about-icon">
+                <img src="<?php echo esc_url(get_theme_file_uri('img/about-img.jpg'));?>" alt="about-img">
             </div>
             <div class="about-items__text">
                 <p class="about-items__text--intro">
-                    YUUMI / フリーランスWebデザイナー兼Webコーダー<br>
+                    MIU / フリーランスWebデザイナー兼Webコーダー<br>
                     <br>
                     コスメと愛犬をこよなく愛するアラサー女子。<br>
                     関西在住で仲の良い家族、愛犬２匹と暮らしています。<br>
@@ -20,7 +20,7 @@
                     早起きとアウトドアは苦手<br>
                     表情筋が硬くてクールに見られることも多いけど<br>
                     実は好奇心旺盛で人を喜ばせることが大好きな<br>
-                    勉強したがりの明るいポジティブ人間。<br>
+                    勉強したがりのポジティブ人間。<br>
                     <br>
                     『人と人が繋がるきっかけをつくる』<br>
                     というWeb制作の魅力に引き込まれ、猛勉強の日々です。<br>

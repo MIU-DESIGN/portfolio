@@ -5,7 +5,7 @@
         <div class="mainvisual__wrapper">
             <div class="site__title">
                 <h2 class="site__title--main"><?php bloginfo('name');?></h2>
-                <p class="site__title--sub">Webデザイナー兼WebコーダーYUUMIの<br>
+                <p class="site__title--sub">Webデザイナー兼WebコーダーMIUの<br>
                     ポートフォリオサイト</p>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('img/TravelBlog-1.png'));?>" alt="ブログサイト">
             </div>
         </div>
-        <a class="btn" href="<?php echo esc_url(home_url('work'));?>">View More</a>
+        <a class="btn" href="<?php echo esc_url(home_url('/category/works/'));?>">View More</a>
     </section>
     <section class="contact-section">
         <div class="section_title">
