@@ -18,7 +18,9 @@
                         <div class="pickup-slider__item"><img src="<?php echo CFS() -> get('slider-img2');?>" alt=""></div>
                     </div>
                     <div class="inner-wrapper">
-                        
+                        <a class="work-site__link" href="<?php echo CFS() -> get('site-link');?>">
+                            <?php echo CFS() -> get('site-link');?>
+                        </a>
 
                         <dl class="site-summery">
                             <dt>サイト概要</dt>
