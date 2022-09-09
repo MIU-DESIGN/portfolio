@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'variables' as v;
 @use 'common';
 @use 'header';
 @use 'footer';
@@ -136,6 +137,22 @@
 
 .works-contents__figure {
     width: 30%;
+<<<<<<< HEAD
+}
+
+/**********************/
+/*      contact       */
+/**********************/
+.contact-section {
+    background-color: v.$bg-color;
+    text-align: center;
+    padding: 64px 0;
+}
+
+.contact-section__text {
+    margin: 64px 0;
+=======
+>>>>>>> 8567cb9c91e7a9a56f36c6aa4c56ffd41e88f12a
 }
 
 /**********************/
