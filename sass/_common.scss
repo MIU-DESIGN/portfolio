@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 body {
     color: v.$text-color;
     font-family: open-sans, sans-serif;

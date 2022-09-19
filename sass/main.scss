@@ -1,5 +1,5 @@
 @use 'variables' as v;
-@use 'variables' as v;
+@use 'mixin';
 @use 'common';
 @use 'header';
 @use 'footer';
@@ -83,11 +83,35 @@
     justify-content: space-between;
     margin-top: 64px;
     margin-bottom: 64px;
+    @include mixin.sp {
+        flex-direction: column;
+        align-items: center;
+        > div:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
 
     &--direction,
     &--design,
     &--coding {
         width: calc((100% - 100px) / 3);
+        @include mixin.sp {
+            width: 80%;
+            display: flex;
+
+            .service-wrap__img {
+                width: 30%;
+            }
+            .service-wrap__text{
+                width: 70%;
+                padding-left: 32px;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+        }
     }
 }
 
@@ -106,12 +130,21 @@
         line-height: 1;
         letter-spacing: .2em;
     }
+    @include mixin.sp {
+        margin-top: 0;
+        &--en {
+            margin-top: 4px;
+        }
+    }
 }
 
 .service__text {
     margin-top: 48px;
     line-height: 2em;
     letter-spacing: .2em;
+    @include mixin.sp {
+        margin-top: 16px;
+    }
 }
 
 
@@ -124,8 +157,8 @@
 }
 
 .works-section__text {
-     margin-top: 64px;
-     letter-spacing: .2em;
+    margin-top: 64px;
+    letter-spacing: .2em;
 }
 
 .works-contents {
@@ -137,22 +170,6 @@
 
 .works-contents__figure {
     width: 30%;
-<<<<<<< HEAD
-}
-
-/**********************/
-/*      contact       */
-/**********************/
-.contact-section {
-    background-color: v.$bg-color;
-    text-align: center;
-    padding: 64px 0;
-}
-
-.contact-section__text {
-    margin: 64px 0;
-=======
->>>>>>> 8567cb9c91e7a9a56f36c6aa4c56ffd41e88f12a
 }
 
 /**********************/
