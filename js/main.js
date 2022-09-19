@@ -37,4 +37,19 @@
       targets.forEach(target => {
         observer.observe(target);
       });
+
+    
+    const hamburger = document.querySelector('.hamburger-menu');
+    const mask = document.querySelector('.mask');
+    const nav = document.querySelector('.header-nav__list');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('is-active');
+      mask.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+    
+    const contactBtn = document.querySelector('.contact-btn');
+    if(window.outerWidth <= 800) {
+      contactBtn.classList.toggle('btn');
+    }
 }

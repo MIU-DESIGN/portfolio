@@ -28,13 +28,19 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('img/header-logo.png'));?>" alt="ヘッダーロゴ">
             </a>
         </h1>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mask"></div>
         <nav class="header-nav">
             <ul class="header-nav__list">
                 <li><a href="<?php echo esc_url(home_url());?>">TOP</a></li>
                 <li><a href="<?php echo esc_url(home_url('/about/'));?>">ABOUT</a></li>
                 <li><a href="<?php echo esc_url(home_url('/service/'));?>">SERVICE</a></li>
                 <li><a href="<?php echo esc_url(home_url('/category/works/'));?>">WORKS</a></li>
-                <li><a class="btn" href="<?php echo esc_url(home_url('/contact/'));?>">CONTACT</a></li>
+                <li><a class="contact-btn btn" href="<?php echo esc_url(home_url('/contact/'));?>">CONTACT</a></li>
             </ul>
         </nav>
     </div>

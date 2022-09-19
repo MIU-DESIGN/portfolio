@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixin';
 
 /**********************/
 /*       header       */
@@ -13,6 +14,72 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.hamburger-menu {
+    position: absolute;
+    right: 40px;
+    z-index: 30;
+    span {
+        display: block;
+        width: 28px;
+        height: 2px;
+        border-radius: 100vh;
+        background-color: v.$text-color;
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+    }
+
+    &.is-active {
+        transition-delay: 0.8s;
+        transform: rotate(45deg);
+        span:nth-child(2) {
+            width: 0;
+        }
+        span:nth-child(1),
+        span:nth-child(3) {
+            transition-delay: .4s;
+        }
+        span:nth-child(1) {
+            transform: translateY(9px);
+        }
+        span:nth-child(3) {
+            transform: translateY(-9px) rotate(90deg);
+        }
+    }
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0;
+    z-index: 20;
+    transition: opacity .4s;
+    &.is-active {
+        opacity: .7;
+    }
+}
+
+.hamburger-menu,
+.hamburger-menu > span {
+    transition: all .4s ease-in-out;
+}
+
+.header-nav {
+    @include mixin.sp {
+        z-index: 30;
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .header-nav__list {
@@ -25,5 +92,25 @@
     }
     a:hover {
         opacity: .8;
+    }
+
+    @include mixin.sp {
+        flex-direction: column;
+        li + li{
+            margin-left: 0;
+            margin-top: 40px;
+        }
+        li {
+            transform: translateY(24px);
+            opacity: 0;
+            transition: opacity .8s ease, transform .8s ease;
+        }
+
+        &.is-active {
+            li {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     }
 }
