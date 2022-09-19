@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixin';
 
 
 /**********************/
@@ -6,13 +7,23 @@
 /**********************/
 .about-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 64px;
     margin-bottom: 64px;
+    @include mixin.sp {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .about-items__icon {
     max-width: 320px;
+    margin-right: 64px;
+    @include mixin.sp {
+        max-width: 280px;
+        margin-left: 0;
+        margin-bottom: 64px;
+    }
 }
 
 .about-items__text {
@@ -23,5 +34,5 @@
 .about-items__text--intro {
     margin-bottom: 64px;
     line-height: 40px;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
 }
