@@ -50,6 +50,16 @@
     
     const contactBtn = document.querySelector('.contact-btn');
     if(window.outerWidth <= 800) {
-      contactBtn.classList.toggle('btn');
+      contactBtn.classList.remove('btn');
+    } else {
+      contactBtn.classList.add('btn')
     }
+    
+    window.addEventListener('resize', () => {
+      if(window.outerWidth <= 800) {
+        contactBtn.classList.remove('btn');
+      } else {
+        contactBtn.classList.add('btn')
+      }
+    })
 }
