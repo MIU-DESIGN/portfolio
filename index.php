@@ -29,47 +29,47 @@
         <div class="wrapper">
             <div class="service__cards">
                 <div class="service__cards--direction">
-                    <div class="service-wrap__img">
-                        <img src="<?php echo esc_url(get_theme_file_uri('img/direction-icon.png'));?>" alt="ディレクション">
-                    </div>
-                    <div class="service-wrap__text">
+                    <div class="service__top-wrap">
+                        <div class="service__icon">
+                            <img src="<?php echo esc_url(get_theme_file_uri('img/direction-icon.png'));?>" alt="ディレクション">
+                        </div>
                         <div class="service__title">
                             <h3 class="service__title--ja">ディレクション</h3>
                             <p class="service__title--en">Direction</p>
                         </div>
-                        <p class="service__text">
-                            お客様のご要望や現状の課題について丁寧にヒアリング行い、効果的なプランをご提案いたします。
-                        </p>
                     </div>
+                    <p class="service__text">
+                        お客様のご要望や現状の課題について丁寧にヒアリング行い、効果的なプランをご提案いたします。
+                    </p>
                 </div>
                 <div class="service__cards--design">
-                    <div class="service-wrap__img">
-                        <img src="<?php echo esc_url(get_theme_file_uri('img/design-icon.png'));?>" alt="デザイン">
-                    </div>
-                    <div class="service-wrap__text">
+                    <div class="service__top-wrap">
+                        <div class="service__icon">
+                            <img src="<?php echo esc_url(get_theme_file_uri('img/design-icon.png'));?>" alt="デザイン">
+                        </div>
                         <div class="service__title">
                             <h3 class="service__title--ja">デザイン</h3>
                             <p class="service__title--en">Design</p>
                         </div>
-                        <p class="service__text">
-                            ヒアリングをもとに、想いが伝わる素敵なデザインを見る人目線で作成いたします。
-                        </p>
                     </div>
+                    <p class="service__text">
+                        ヒアリングをもとに、想いが伝わる素敵なデザインを見る人目線で作成いたします。
+                    </p>
                 </div>
                 <div class="service__cards--coding">
-                    <div class="service-wrap__img">
-                        <img src="<?php echo esc_url(get_theme_file_uri('img/coding-icon.png'));?>" alt="コーディング">
-                    </div>
-                    <div class="service-wrap__text">
+                    <div class="service__top-wrap">
+                        <div class="service__icon">
+                            <img src="<?php echo esc_url(get_theme_file_uri('img/coding-icon.png'));?>" alt="コーディング">
+                        </div>
                         <div class="service__title">
                             
                             <h3 class="service__title--ja">コーディング</h3>
                             <p class="service__title--en">Coding</p>
                         </div>
-                        <p class="service__text">
-                            作成したデザインをもとにコーディングを行います。画面幅によって表示を変えるレスポンシブ対応も可能です。
-                        </p>
                     </div>
+                    <p class="service__text">
+                        作成したデザインをもとにコーディングを行います。画面幅によって表示を変えるレスポンシブ対応も可能です。
+                    </p>
                 </div>
             </div>
         </div>

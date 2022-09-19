@@ -65,6 +65,7 @@
     opacity: 0;
     z-index: 20;
     transition: opacity .4s;
+    pointer-events: none;
     &.is-active {
         opacity: .7;
     }
