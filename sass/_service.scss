@@ -48,7 +48,8 @@
 
 .skill {
     margin-top: 32px;
-    color: v.$accent-color;
+    // color: v.$accent-color;
+    color: v.$text-color;
     letter-spacing: .2em;
     font-weight: 600;
     @include mixin.sp {
