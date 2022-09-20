@@ -68,6 +68,7 @@
     pointer-events: none;
     &.is-active {
         opacity: .7;
+        pointer-events: all;
     }
 }
 

@@ -39,6 +39,7 @@
       });
 
     
+    //ハンバーガーメニュー
     const hamburger = document.querySelector('.hamburger-menu');
     const mask = document.querySelector('.mask');
     const nav = document.querySelector('.header-nav__list');
@@ -48,6 +49,12 @@
       nav.classList.toggle('is-active');
     });
     
+    mask.addEventListener('click', () => {
+      hamburger.classList.remove('is-active');
+      mask.classList.remove('is-active');
+      nav.classList.remove('is-active');
+    });
+
     const contactBtn = document.querySelector('.contact-btn');
     if(window.outerWidth <= 800) {
       contactBtn.classList.remove('btn');
