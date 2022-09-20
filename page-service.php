@@ -77,4 +77,4 @@
         <a class="btn" href="<?php echo esc_url(home_url('contact'));?>">お問い合わせ</a>
     </section>
 </main>
-<?php get_header();?>
+<?php get_footer();?>

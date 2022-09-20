@@ -23,6 +23,9 @@
     position: relative;
     display: flex;
     align-items: end;
+    @include mixin.sp {
+        height: auto;
+    }
 }
 
 .mainvisual__wrapper {
@@ -43,6 +46,10 @@
         font-style: normal;
         color: v.$accent-color;
         margin-bottom: 36px;
+        @include mixin.sp {
+            font-size: 32px;
+            letter-spacing: .3em;
+        }
     }
     &--sub {
         color: v.$text-color;
@@ -50,6 +57,10 @@
         letter-spacing: .2em;
         line-height: 2em;
         padding-right: 16px;
+        @include mixin.sp {
+            font-size: 12px;
+            margin-bottom: 24px;
+        }
     }
 }
 
