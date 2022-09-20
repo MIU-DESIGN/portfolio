@@ -29,7 +29,9 @@
                     ぜひお気軽にご連絡ください。
                 </p>
 
-                <a class="btn" href="<?php echo esc_url(home_url('contact'));?>">お問い合わせページへ</a>
+                <div class="contact-btn__wrap">
+                    <a class="btn" href="<?php echo esc_url(home_url('contact'));?>">お問い合わせページへ</a>
+                </div>
             </div>
         </div>
     </div>
